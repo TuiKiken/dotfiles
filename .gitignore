@@ -1,6 +1,7 @@
 ## ignore all
 *
 !.gitignore
+!.gitmodules
 
 ## except
 # git
@@ -9,3 +10,5 @@
 # zsh
 !.zshrc
 !.zshenv
+# vim
+!.vimrc
