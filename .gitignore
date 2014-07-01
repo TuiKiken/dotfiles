@@ -1,0 +1,11 @@
+## ignore all
+*
+!.gitignore
+
+## except
+# git
+!.gitconfig
+!.gitignore_global
+# zsh
+!.zshrc
+!.zshenv

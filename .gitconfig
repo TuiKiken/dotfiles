@@ -1,0 +1,22 @@
+[user]
+	name = Valentin Shevko
+	email = tuikiken@gmail.com
+[core]
+	editor = "mvim -f"
+	excludesfile = ~/.gitignore_global
+[pager]
+	log = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
+	show = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
+	diff = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[color]
+	ui = true
+[alias]
+	lg = log --graph --color --pretty=format:'%C(red)%h%C(reset) -%C(yellow)%d%C(reset) %s %C(green)(%cr) %C(bold blue)<%an>%C(reset)'
+[push]
+	default = simple
