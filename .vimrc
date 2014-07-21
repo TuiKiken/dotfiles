@@ -26,6 +26,7 @@ Bundle 'scrooloose/syntastic'
   let g:syntastic_javascript_checkers = ['jshint', 'jsl']
 Bundle 'groenewege/vim-less'
   let g:user_emmet_leader_key='<C-Z>'
+Bundle 'ntpeters/vim-better-whitespace'
   
 call vundle#end()
 filetype plugin indent on
